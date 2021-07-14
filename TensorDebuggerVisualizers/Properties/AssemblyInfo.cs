@@ -34,3 +34,10 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: System.Diagnostics.DebuggerVisualizer(
+typeof(TensorDebuggerVisualizers.TensorDebuggerVisualizer),
+//typeof(VisualizerObjectSource),
+"TensorDebuggerVisualizers.ObjectSources.TensorObjectSource",
+TargetTypeName = "SharpCV.Mat",
+Description = "Tensor Visualizer")]
