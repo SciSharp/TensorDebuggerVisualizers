@@ -38,6 +38,6 @@ using System.Runtime.InteropServices;
 [assembly: System.Diagnostics.DebuggerVisualizer(
 typeof(TensorDebuggerVisualizers.TensorDebuggerVisualizer),
 //typeof(VisualizerObjectSource),
-"TensorDebuggerVisualizers.ObjectSources.TensorObjectSource",
-TargetTypeName = "SharpCV.Mat",
+"TensorDebuggerVisualizers.ObjectSources.TensorObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
 Description = "Tensor Visualizer")]
