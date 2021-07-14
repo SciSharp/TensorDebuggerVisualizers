@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpCV", "..\SharpCV\src\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tensorflow.Binding", "..\TensorFlow.NET\src\TensorFlowNET.Core\Tensorflow.Binding.csproj", "{62C26E8F-3E38-4D4C-8565-B7BA62EEC171}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TensorDebuggerVisualizers.ObjectSources", "TensorDebuggerVisualizers.ObjectSources\TensorDebuggerVisualizers.ObjectSources.csproj", "{2B3EA628-1EB3-440E-970F-54C9CAD49A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorDebuggerVisualizers", "TensorDebuggerVisualizers\TensorDebuggerVisualizers.csproj", "{FB4EEA42-F561-4D8F-8086-375B4341BEDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,22 @@ Global
 		{62C26E8F-3E38-4D4C-8565-B7BA62EEC171}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62C26E8F-3E38-4D4C-8565-B7BA62EEC171}.Release|x64.ActiveCfg = Release|x64
 		{62C26E8F-3E38-4D4C-8565-B7BA62EEC171}.Release|x64.Build.0 = Release|x64
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B3EA628-1EB3-440E-970F-54C9CAD49A66}.Release|x64.Build.0 = Release|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Debug|x64.Build.0 = Debug|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|x64.ActiveCfg = Release|Any CPU
+		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
