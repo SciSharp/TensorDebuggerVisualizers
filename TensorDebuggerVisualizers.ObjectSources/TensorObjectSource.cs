@@ -13,24 +13,27 @@ namespace TensorDebuggerVisualizers.ObjectSources
 	{
 		public override void GetData(object target, Stream outgoingData)
 		{
-			byte size = 0;
+			byte ndim = 0;
 			long[] dims = new long[0];
 			byte[] data = new byte[0];
+			int dataLength = 0;
 
 			using var bw = new BinaryWriter(outgoingData);
 
 			if (target is SharpCV.Mat mat)
 			{
 				dims = mat.shape.dims;
-				size = (byte)dims.Length;
+				ndim = (byte)dims.Length;
 				data = mat.data.ToByteArray();
+				dataLength = data.Length;
 			}
 
-			bw.Write(size);
-			for (int i = 0; i < size; i++)
+			bw.Write(ndim);
+			for (int i = 0; i < ndim; i++)
 			{
 				bw.Write(dims[i]);
 			}
+			bw.Write(dataLength);
 			bw.Write(data);
 		}
 
