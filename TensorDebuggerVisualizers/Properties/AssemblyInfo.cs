@@ -36,14 +36,14 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
+typeof(TensorDebuggerVisualizers.MatDebuggerVisualizer),
+"TensorDebuggerVisualizers.ObjectSources.MatObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
+Description = "Mat Visualizer")]
+
+[assembly: System.Diagnostics.DebuggerVisualizer(
 typeof(TensorDebuggerVisualizers.TensorDebuggerVisualizer),
 //typeof(VisualizerObjectSource),
 "TensorDebuggerVisualizers.ObjectSources.TensorObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
 TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
 Description = "Tensor Visualizer")]
-
-[assembly: System.Diagnostics.DebuggerVisualizer(
-typeof(TensorDebuggerVisualizers.MatDebuggerVisualizer),
-"TensorDebuggerVisualizers.ObjectSources.MatObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
-Description = "Mat Visualizer")]

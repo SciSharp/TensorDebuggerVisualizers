@@ -16,7 +16,8 @@ namespace TensorDebuggerVisualizers.Tester
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			var fm = new TensorViewer();
+			Application.Run(fm);
 		}
 	}
 }

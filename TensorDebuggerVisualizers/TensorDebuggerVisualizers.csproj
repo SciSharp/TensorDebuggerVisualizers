@@ -49,5 +49,10 @@
       <DependentUpon>TensorViewer.cs</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TensorViewer.resx">
+      <DependentUpon>TensorViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

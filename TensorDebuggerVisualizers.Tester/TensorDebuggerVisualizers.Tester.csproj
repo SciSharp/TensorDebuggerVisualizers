@@ -49,5 +49,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TensorDebuggerVisualizers\TensorDebuggerVisualizers.csproj">
+      <Project>{fb4eea42-f561-4d8f-8086-375b4341bedf}</Project>
+      <Name>TensorDebuggerVisualizers</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

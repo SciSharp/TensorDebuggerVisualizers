@@ -29,10 +29,18 @@ namespace TensorDebuggerVisualizers
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// TensorViewer
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Name = "TensorViewer";
 			this.Text = "TensorViewer";
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
