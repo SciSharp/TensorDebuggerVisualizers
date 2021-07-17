@@ -41,3 +41,9 @@ typeof(TensorDebuggerVisualizers.TensorDebuggerVisualizer),
 "TensorDebuggerVisualizers.ObjectSources.TensorObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
 TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
 Description = "Tensor Visualizer")]
+
+[assembly: System.Diagnostics.DebuggerVisualizer(
+typeof(TensorDebuggerVisualizers.MatDebuggerVisualizer),
+"TensorDebuggerVisualizers.ObjectSources.MatObjectSource, TensorDebuggerVisualizers.ObjectSources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+TargetTypeName = "SharpCV.Mat, SharpCV, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null",
+Description = "Mat Visualizer")]
