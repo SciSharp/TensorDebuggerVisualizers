@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TensorDebuggerVisualizers.O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorDebuggerVisualizers", "TensorDebuggerVisualizers\TensorDebuggerVisualizers.csproj", "{FB4EEA42-F561-4D8F-8086-375B4341BEDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorDebuggerVisualizers.Tester", "TensorDebuggerVisualizers.Tester\TensorDebuggerVisualizers.Tester.csproj", "{B7802A95-48FF-415C-A077-F65B4282D925}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,14 @@ Global
 		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|x64.ActiveCfg = Release|Any CPU
 		{FB4EEA42-F561-4D8F-8086-375B4341BEDF}.Release|x64.Build.0 = Release|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Debug|x64.Build.0 = Debug|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Release|x64.ActiveCfg = Release|Any CPU
+		{B7802A95-48FF-415C-A077-F65B4282D925}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
