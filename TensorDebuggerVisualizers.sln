@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorDebuggerVisualizers",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TensorDebuggerVisualizers.Tester", "TensorDebuggerVisualizers.Tester\TensorDebuggerVisualizers.Tester.csproj", "{B7802A95-48FF-415C-A077-F65B4282D925}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{EC726956-FC24-4384-8147-13739C13FEBB}"
+	ProjectSection(SolutionItems) = preProject
+		README.cn.md = README.cn.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
