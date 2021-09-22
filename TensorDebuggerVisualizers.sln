@@ -18,7 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{EC726956-F
 		README.cn.md = README.cn.md
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DebuggerVisualizersShared", "DebuggerVisualizersShared\DebuggerVisualizersShared.shproj", "{DB563AC1-A6F6-4AEB-9196-45CC73360A95}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DebuggerVisualizersShared\DebuggerVisualizersShared.projitems*{db563ac1-a6f6-4aeb-9196-45cc73360a95}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
