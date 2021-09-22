@@ -15,6 +15,13 @@ namespace TensorDebuggerVisualizers
 			return WriteTensor(outgoingData, dims, data);
 		}
 
+		public static long WriteTensor(this Stream outgoingData, Tensorflow.Tensor tensor)
+		{
+			var dims = tensor.dims;
+			var data = tensor.BufferToArray();
+			return WriteTensor(outgoingData, dims, data);
+		}
+
 #endif
 		public static long WriteTensor(this Stream outgoingData, long[] dims, byte[] data)
 		{

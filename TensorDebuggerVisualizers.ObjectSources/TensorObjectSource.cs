@@ -19,6 +19,9 @@ namespace TensorDebuggerVisualizers.ObjectSources
 				case SharpCV.Mat mat:
 					outgoingData.WriteTensor(mat);
 					break;
+				case Tensorflow.Tensor tensor:
+					outgoingData.WriteTensor(tensor);
+					break;
 				default:
 					break;
 			}
