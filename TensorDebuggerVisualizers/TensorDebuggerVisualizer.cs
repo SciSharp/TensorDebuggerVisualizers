@@ -8,31 +8,28 @@ using System.Threading.Tasks;
 
 namespace TensorDebuggerVisualizers
 {
+	using static TensorStreamHelper;
 	public partial class TensorDebuggerVisualizer : DialogDebuggerVisualizer
 	{
 		protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
 		{
 			using var stream = objectProvider.GetData();
-			using var sr = new System.IO.BinaryReader(stream);
-			var ndim = sr.ReadByte();
-			var dims = new long[ndim];
+
+			var (dims, data) = stream.ReadTensor();
+			var ndim = (byte)dims.Length;
 			long total = (ndim == 0 ? 0 : 1);
 			for (int i = 0; i < ndim; i++)
 			{
-				var dim = sr.ReadInt64();
-				dims[i] = dim;
-				total = total * dim;
+				var dim = dims[i];
+				total *= dim;
 			}
 
-			var dataLength = sr.ReadInt32();
-
-			var data = sr.ReadBytes(dataLength);
+			var dataLength = data.Length;
 
 			var dlg = new TensorViewer();
-			dlg.Text = $"维度：{ndim}[{String.Join(",", dims)}] 秩，数据长度：{total} 字节，欲收 {dataLength} 字节，实收 {data.LongLength} 字节。";
+			dlg.Text = $"维度：{ndim}[{String.Join(",", dims)}] 秩，数据长度：{total} 字节，应收 {dataLength} 字节，实收 {data.LongLength} 字节。";
 
 			windowService.ShowDialog(dlg);
-
 
 		}
 	}

@@ -6,8 +6,9 @@
     <SharedGUID>db563ac1-a6f6-4aeb-9196-45cc73360a95</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>DebuggerVisualizersShared</Import_RootNamespace>
+    <Import_RootNamespace>TensorDebuggerVisualizers</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)TensorStreamHelper.cs" />
   </ItemGroup>
 </Project>
